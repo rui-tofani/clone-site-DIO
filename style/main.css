@@ -1,0 +1,152 @@
+:root {
+    --blueps: #003087;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--blueps);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-img{
+    height: 50px;
+    align-items: center;
+    margin: 10px;    
+}
+
+header .logo-txt{
+    margin-left: -780px;
+}
+
+header nav a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.90)100%), url('/img/capa-ps.png');
+    
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.principal .titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal .descricao{
+    margin-top: 3%;    
+}
+
+.carrossel .conteudo-carrossel{
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#titulo-carrossel1, #titulo-carrossel2, #titulo-carrossel3{
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    color: var(--blueps);
+    padding: 5px;
+}
+
+.item {
+    margin-top: -20px;
+}
+
+.box-game {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(208, 93%, 22%);
+    padding: 20px;
+}
+
+/* From cssbuttons.io */
+button2 {
+    --glow-color: rgb(87, 44, 241);
+    --glow-spread-color: rgba(189, 164, 255, 0.781);
+    --enhanced-glow-color: rgb(94, 24, 160);
+    --btn-color: rgb(38, 13, 180);
+    border: 1.5px solid white;
+    padding: 0.2em 1em;
+    color: rgb(147, 148, 207);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   button2::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button2:hover {
+    color: white;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button2:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
